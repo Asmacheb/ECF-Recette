@@ -1,0 +1,1175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+   
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    color: #5B2406; 
+}
+
+/* ACCUEIL */
+
+.pageune {
+    background-image: url(img/accueilimg.png);
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    position: relative; 
+    background-size: cover;
+    
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    height: 60vh;
+    width: 60vw;
+}
+
+.imglogo {
+    height: 50vh; 
+}
+.menuburger{
+    display: none;
+}
+.nav { 
+    color: #5B2406;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: flex-end; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000; 
+    justify-content: flex-end;
+}
+
+.nav ul {
+    list-style: none; 
+    display: flex;   
+}
+
+.nav li {
+    padding: 15px;
+    margin: 0 10px; 
+    text-transform: uppercase;
+   font-weight: bold;
+   
+}
+.menu a{
+    text-decoration: none;
+    color: #5B2406;
+}
+.deroulant {
+    max-width: 210px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: absolute;
+    top: 30px;
+    transform: translateX(-25%);
+    background-color: #edede985;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.deroulant.active {
+    opacity: 1;
+    visibility: visible;
+}
+.deroulant ul {
+    list-style: none;
+    
+  }
+  .deroulant li {
+    position: relative;
+  }
+
+  li:hover .deroulant {
+    opacity: 1;
+    visibility: visible;
+   
+  }
+  .deroulant a {
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    color: #5B2406;
+    text-decoration: none;
+  }
+
+
+/* PRESENTATION */
+
+.pagedeux{
+    background-color: #CB997E;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titre{
+    
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 1.7rem;       
+}
+.centre{
+    display: flex;
+    flex-direction: row;
+}
+.femme img{
+     margin-top: 10vh;
+     margin-left: 5vh;
+    width: 30vw;
+    height: 70vh;
+    background-position: center;
+    object-fit: cover;
+
+}
+
+.presentation{
+    width: 70vw;
+    height: 70vh;
+    color: white;
+    line-height: 1.8; 
+    padding: 10vw;
+    font-size: 1.5rem;
+       
+}
+
+.bonnedegustation{
+    height: 10vh;
+    width: 100vw;
+    font-size:1.5rem ;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -13vw;
+}
+
+/* RECETTES FAVORITES */
+a{
+    text-decoration: none;
+    color: #CB997E;
+}
+.pagetrois{
+    height: 100vh;
+    width: 100vw;
+}
+.titre2{
+    width: 100vw;
+    height: 20vh;
+    color: #CB997E;
+    font-size: 1.7rem;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+   
+}
+.mesfav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 80vh;
+    color: #CB997E;
+    text-align: center;
+}
+.mesfav img{
+    height: 50vh;  
+   
+}
+.mesfav p{
+    font-size: 1.3rem;    
+}
+/* hover pancakes */
+.imgpancakes {
+    position: relative;
+    display: inline-block;
+  
+}
+
+.pancakesback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.imgpancakes:hover .pancakesback {
+    opacity: 1;
+}
+
+/* hover brownie */
+.imgbrownie {
+    position: relative;
+    display: inline-block;
+   
+}
+
+.brownieback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.imgbrownie:hover .brownieback {
+    opacity: 1;
+}
+
+/* hover cookies */
+
+.imgcookies {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.cookiesback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.imgcookies:hover .cookiesback {
+    opacity: 1;
+}
+
+/* hover muffines */
+
+.imgmuffins {
+    position: relative;
+    display: inline-block;
+   
+}
+
+.muffinsback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.imgmuffins:hover .muffinsback {
+    opacity: 1;
+}
+
+/* hover gaufres */
+
+.imggaufres {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.gaufresback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.imggaufres:hover .gaufresback {
+    opacity: 1;
+}
+
+
+
+/* PANCAKES */
+
+.pagequatre{
+    background-color: #EDDCD2;
+    height: 100vh;
+    width: 100vw;
+}
+.input1{
+    height: 10vh;
+    width: 40vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 55vh;
+   background-color:white;
+   color: #5B2406;
+   border: #CB997E solid 2px;   
+}
+button{
+    color: white;
+    background-color: #CB997E;
+    width: 5vh;
+}
+.pancakes{
+    width: 33vw;
+    height: 80vh;
+}
+.pancakes img{
+    width: 30vw;
+}
+.recette1{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+}
+.ingredients1{
+    height: 80vh;
+    width: 33vw ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+.preparation1{
+    height: 80vh;
+    width: 33vw ;
+   margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+   font-size: 1.1rem;
+}
+
+ 
+
+/* BROWNIE */
+
+.pagecinq{
+    height: 100vh;
+    width: 100vw;
+    background-color: #C7A492;
+}
+.recette2{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+}
+.ingredients2{
+    height: 80vh;
+    width: 33vw ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+.preparation2{
+    height: 80vh;
+    width: 33vw ;
+   margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+   font-size: 1.1rem;
+   margin-left: 4vw;
+}
+
+/* COOKIES */
+
+.pagesix{
+    height: 100vh;
+    width: 100vh;
+}
+.recette3{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+}
+.ingredients3{
+    height: 80vh;
+    width: 33vw ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+.preparation3{
+    height: 80vh;
+    width: 33vw ;
+   margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+   font-size: 1.1rem;
+}
+
+
+/* MUFFINS */
+.pagesept{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFE8D6;
+}
+.recette4{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+}
+.ingredients4{
+    height: 80vh;
+    width: 33vw ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+}
+.preparation4{
+    height: 80vh;
+    width: 33vw ;
+   margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+   font-size: 1.1rem;
+   margin-left: 4vw;
+}
+
+/* GAUFRES */
+.pagehuit{
+    height: 100vh;
+    width: 100vw;
+    background-color:#CB997E;
+}
+.recette5{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+}
+.ingredients5{
+    height: 80vh;
+    width: 33vw ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 1.2rem;
+    
+}
+.preparation5{
+    height: 80vh;
+    width: 33vw ;
+   margin-top: 30vh;
+    align-items: center;
+    justify-content: center;
+   font-size: 1.1rem;
+   
+}
+
+/* AUTRES RECETTES */
+.pageneuf {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 12vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/pageneuf.png);
+}
+.titrerecette{
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+ color: #CB997E;
+ font-size: 1.7rem;  
+}
+.carrousel {
+    height: 600px;
+    width: 800px;
+    border: black solid 1px;
+    box-shadow: 0 0 14px rgb(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    top: 100px;
+    left: 350px;
+    overflow: hidden;
+    background-color: #CB997E;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.container img {
+    height: 600px;
+    width: 800px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  
+}
+
+.fleche {
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 100px;
+    z-index: 1;
+}
+
+#g { margin-top: 150px;
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#d { margin-top: 150px;
+    left: 730px;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+
+#d:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+
+
+
+
+/* CONTACTS */
+.pagedix{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-image: url(img/pexels-cup-of-couple-7303767.jpg);
+    background-position: center;
+    position: relative; 
+    background-size: cover;
+    opacity: 90%;
+}
+.total{
+    /* background-color: rgb(228, 228, 205); */
+    height: 100vh;
+    width: 100vw;
+    /* color: #5B2406; */
+    color: white;
+    font-size: 3vh;
+}
+.contacter {
+   margin-top: 3vh;
+   margin-left: 3vh;
+  font-size: 5vh;  
+  
+}
+.remerciement{
+    width: 50vw;
+}
+.contacter2{
+    margin-left: 3vh;
+    font-size: 3vh;  
+ 
+}
+.RS{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+ 
+}
+.icon {
+    margin-right: 2vw; 
+    background-color: rgba(0, 0, 0, 0.315);
+   width: 20vw;
+   height: 9vh;
+  /* padding: 1vh;
+  margin-top: -10vh; */
+  }
+  
+  .RS .box{
+    position: relative;
+    /* width: 300px ;
+    height: 100px; */
+    box-sizing: border-box;
+    text-align: center;
+    /* margin: 0 10px; */
+  }
+
+  .RS .box .icon{
+    transition: 0.5s;
+    transform-origin: top;
+    transform: translateY(0) rotateX('0deg');
+  }
+
+  .RS .box:hover .icon{
+    transform: translateY(100%) rotateX(90deg);
+  }
+  .RS .box .icon {
+ font-size: 3em;
+ line-height: 100px;
+ color: white;
+
+  }
+
+  .RS .box .mon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+   height: 9vh;
+    background: #5B2406;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: translateY(-100px) rotateX(90deg);
+  }
+
+  .RS .box:hover .mon{
+   transform: translateY(0) rotateX(0deg);
+  }
+  
+.RS .box .mon h3{
+    margin-top: 2vh;
+    padding: 0%;
+    list-style: 100px;
+    font-size: 3vh;
+    font-weight: 500;
+    color: white;
+    
+}
+
+/* RESPONSIVE */
+
+/* PAGE D'ACCUEIL - RESPONSIVE */
+
+/* FORMAT TABLETTE (767px - 1023px) */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .pageune {
+        background-image: url(img/accueilimg.png);
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        position: relative;
+        background-size: cover;
+    }
+ 
+    .nav {
+      
+    width: 100%;
+    color: #5B2406;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: flex-end; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000; 
+    justify-content: flex-end;
+
+    }
+
+    ul li {
+        display: none;
+    }
+
+    .menuburger {
+        display: block;
+        height: 10vh;
+       
+    }
+    .logo{
+     position: absolute;
+    top: 60vh;
+    left: 65vw;
+    transform: translate(-50%, -50%);
+   
+    }
+    .imglogo {
+        height: 40vh;
+    }
+
+    
+}
+
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px) {
+    .pageune {
+        background-image: url(img/accueilimg.png);
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        position: relative;
+        background-size: cover;
+        object-fit: contain;
+    }
+
+    .nav {
+    
+        color: #5B2406;
+        background-color: rgba(255, 255, 255, 0.4);
+        display: flex;
+        justify-content: flex-end; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1000; 
+        justify-content: flex-end;
+    
+        }
+
+    ul li {
+        display: none;
+    }
+
+    .menuburger {
+        display: block;
+        height: 5%;
+        width: 5%;
+    }
+}
+
+/* PRESENTATION */
+
+/* FORMAT TABLETTE (767px - 1023px) */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .titre{
+        height: 10vh;
+        width: 100vw;
+        color: white;
+        font-size: 1.1rem;  
+    }
+    .centre{
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation{
+        width: 100vw;
+        height: 50vh;
+        color: white;
+        line-height: 1.8; 
+       
+        font-size: 0.9rem;
+           
+    }
+    .femme {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
+    }
+    
+    .femme img {
+        height: 100%;
+        max-width: 100%; 
+        object-fit: contain;
+    }
+    .bonnedegustation{
+        height: 10vh;
+        width: 100vw;
+        font-size: 0.8rem ;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+      
+    }
+    
+}
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .presentation{
+        width: 100vw;
+        height: 50vh;
+        color: white;
+        line-height: 1.8; 
+       
+        font-size: 0.9rem;
+           
+    }
+    .femme {
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
+    }
+    
+    .femme img {
+        height: 100%;
+        max-width: 100%; 
+        object-fit: contain;
+    }
+    .bonnedegustation{
+        height: 10vh;
+        width: 100vw;
+        font-size: 0.8rem ;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+      
+    }
+    .titre{
+        height: 10vh;
+        width: 100vw;
+        color: white;
+        font-size: 1.1rem;  
+    }
+    .centre{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* FAVORIS */
+/* FORMAT TABLETTE (767px - 1023px) */
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ 
+    
+    .titre2{
+        width: 100vw;
+        height: 15vh;
+        color: #CB997E;
+        font-size: 1rem;
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+       
+    }
+    .mesfav{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 80vh;
+        color: #CB997E;
+        text-align: center;
+    }
+    .mesfav img{
+        height: 30vh;  
+       
+    }
+    .mesfav p{
+        font-size: 0.8rem;    
+    }
+}
+
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    a{
+        text-decoration: none;
+        color: #CB997E;
+    }
+    
+    .titre2{
+        width: 100vw;
+        height: 20vh;
+        color: #CB997E;
+        font-size: 1rem;
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+       
+    }
+    .mesfav{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 80vh;
+        color: #CB997E;
+        text-align: center;
+    }
+    .mesfav img{
+        height: 30vh;  
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .mesfav p{
+        font-size: 0.8rem;    
+    }
+}
+
+
+
+/* PANCAKES */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+   
+    .input1 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .pancakes {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .recette1 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .pancakes .ingredients1{
+        display: flex;
+       
+       
+    }
+    .ingredients1 {
+        flex-direction: row;
+        width: 10vw;
+        height: 10vh;
+       display: flex;
+        font-size: 1rem;
+    }
+    
+    .preparation1{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 1rem
+
+    }
+}
+
+
+
+/* BROWNIE */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .input2 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .recette2 {
+        flex-direction: column-reverse;
+        height: 90vh;
+    }
+    .brownie {
+        width: 30vw;
+        height: 45vw;
+    }
+    .brownie .ingredients2{
+        display: flex;
+        
+    }
+    .brownie img {
+        width: 30vw;
+    }
+
+    .ingredients2 {
+        flex-direction: row;
+        width: 10vw;
+        height: 10vh;
+       display: flex;
+        font-size: 1rem;
+    }
+    
+    .ingredients2,
+    .preparation2 {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .preparation2{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 1rem
+
+    }
+}
+
+
+/* COOKIES */
+/* MUFFINS */
+/* GAUFRES */
+
+/* AUTRES RECETTES */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .titrerecette{
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        align-items: center; 
+     color: #CB997E;
+     font-size: 1rem;  
+    }
+.carrousel {
+    height: 400px;
+    width: 500px;
+    border: black solid 1px;
+    box-shadow: 0 0 14px rgb(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    top: 150px;
+    left: 200px;
+    overflow: hidden;
+    background-color: #CB997E;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.container img {
+    height: 400px;
+    width: 500px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+  
+}
+.fleche {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    top: 100px;
+    z-index: 1;
+}
+
+#g { margin-top: 60px;
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#d { margin-top: 60px;
+    left: 450px;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+
+#d:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+
+}
+
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .titrerecette{
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        justify-content: center; 
+        align-items: center; 
+     color: #CB997E;
+     font-size: 1rem;  
+    }
+
+    .carrousel {
+        height: 300px;
+        width: 400px;
+        border: black solid 1px;
+        box-shadow: 0 0 14px rgb(0, 0, 0, 0.3);
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-position: center;
+        top: 250px;
+        left: 250px;
+        overflow: hidden;
+        background-color: #CB997E;
+    }
+    
+    .container {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .container img {
+        height: 300px;
+        width: 400px;
+        object-fit: contain;
+        background-position: center;
+        background-size: cover;
+      
+    }
+    .fleche {
+        position: absolute;
+        width: 20px;
+        cursor: pointer;
+        top: 50px;
+        z-index: 1;
+    }
+
+#g { margin-top: 55px;
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#d { margin-top: 50px;
+    left: 360px;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+}
+
+#d:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+}
+
