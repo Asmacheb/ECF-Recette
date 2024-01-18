@@ -578,7 +578,7 @@ button{
 .contacter {
    margin-top: 3vh;
    margin-left: 3vh;
-  font-size: 5vh;  
+  font-size: 3rem;  
   
 }
 .remerciement{
@@ -697,13 +697,13 @@ button{
 
     .menuburger {
         display: block;
-        height: 10vh;
+        height: 7vh;
        
     }
     .logo{
      position: absolute;
-    top: 60vh;
-    left: 65vw;
+    top: 65vh;
+    left: 64vw;
     transform: translate(-50%, -50%);
    
     }
@@ -736,6 +736,7 @@ button{
         position: fixed;
         top: 0;
         left: 0;
+        height: 9vh;
         width: 100vw;
         z-index: 1000; 
         justify-content: flex-end;
@@ -748,9 +749,18 @@ button{
 
     .menuburger {
         display: block;
-        height: 5%;
-        width: 5%;
+        height: 5vh;
     }
+    .logo{
+        position: absolute;
+       top: 65vh;
+       left: 58vw;
+       transform: translate(-50%, -50%);
+      
+       }
+       .imglogo {
+           height: 30vh;
+       }
 }
 
 /* PRESENTATION */
@@ -853,11 +863,16 @@ button{
 @media screen and (min-width: 768px) and (max-width: 1023px){
  
     
+    a{
+        text-decoration: none;
+        color: #CB997E;
+    }
+    
     .titre2{
         width: 100vw;
-        height: 15vh;
+        height: 10vh;
         color: #CB997E;
-        font-size: 1rem;
+        font-size: 1.3rem;
         display: flex;
         text-align: center;
         justify-content: center; 
@@ -866,19 +881,32 @@ button{
        
     }
     .mesfav{
+        margin-left: 35vw;
+        margin-top: 5vh;
         display: flex;
         flex-direction: column;
         width: 50vw;
-        height: 80vh;
+        height: 90vh;
         color: #CB997E;
         text-align: center;
     }
     .mesfav img{
-        height: 30vh;  
+        height: 20vh;  
+        display: flex;
+        flex-direction: column;
        
     }
-    .mesfav p{
-        font-size: 0.8rem;    
+    .mesfav p {
+        width: 20vw;
+        font-size: 1.5rem;
+        margin-left: 180px;
+        margin-top: -60px;
+    }
+
+    .imgpancakes{
+        width: 100vw;
+        display:flex;
+     
     }
 }
 
@@ -892,7 +920,7 @@ button{
     
     .titre2{
         width: 100vw;
-        height: 20vh;
+        height: 10vh;
         color: #CB997E;
         font-size: 1rem;
         display: flex;
@@ -903,21 +931,32 @@ button{
        
     }
     .mesfav{
+        margin-left: 35vw;
+        margin-top: 5vh;
         display: flex;
         flex-direction: column;
         width: 50vw;
-        height: 80vh;
+        height: 90vh;
         color: #CB997E;
         text-align: center;
     }
     .mesfav img{
-        height: 30vh;  
+        height: 20vh;  
         display: flex;
         flex-direction: column;
        
     }
-    .mesfav p{
-        font-size: 0.8rem;    
+    .mesfav p {
+        width: 15vw;
+        font-size: 1rem;
+        margin-left: 180px;
+        margin-top: -60px;
+    }
+
+    .imgpancakes{
+        width: 100vw;
+        display:flex;
+     
     }
 }
 
@@ -929,35 +968,26 @@ button{
    
     .input1 {
         width: 80vw;
-        margin: 0 auto;
+        left: 5vh;
     }
-
     .pancakes {
         width: 30vw;
         height: 45vw;
         display: flex;
         flex-direction: row;
     }
-
-
-
     .recette1 {
         flex-direction: column;
         height: auto; 
     }
     .pancakes .ingredients1{
-        display: flex;
-       
-       
+        display: flex;   
     }
-    .ingredients1 {
-        flex-direction: row;
+    .ingredients1 {   
         width: 10vw;
         height: 10vh;
-       display: flex;
-        font-size: 1rem;
-    }
-    
+        font-size: 1rem;    
+    }    
     .preparation1{
         margin: 0;
         width: 90vw;
@@ -966,8 +996,44 @@ button{
        align-items: center;
        justify-content: center;
        font-size: 1rem
-
     }
+}
+
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .input1 {
+        width: 90vw;
+      margin: auto;
+    }
+  
+    .pancakes {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .recette1 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .pancakes .ingredients1{
+        display: flex;   
+    }
+    .ingredients1 {   
+        width: 10vw;
+        height: 10vh;
+        font-size: 1rem;    
+    }    
+    .preparation1{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 0.9rem
+    }  
 }
 
 
@@ -975,7 +1041,7 @@ button{
 /* BROWNIE */
 /* FORMAT TABLETTE (767px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .input2 {
+    .input1 {
         width: 80vw;
         margin: 0 auto;
     }
@@ -1019,23 +1085,317 @@ button{
 
     }
 }
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .input1 {
+        width: 80vw;
+      margin: auto;
+    }
+ 
+    .brownie {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .recette2 {
+        flex-direction: column-reverse;
+        height: auto; 
+    }
+    .brownie .ingredients2{
+        display: flex;   
+    }
+    .ingredients2 {   
+        width: 10vw;
+        height: 10vh;
+        font-size: 1rem;    
+    }    
+    .preparation2{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 0.9rem
+    }  
+}
 
 
 /* COOKIES */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+   
+    .input1 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+
+    .cookies {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .recette3 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .pancakes .ingredients1{
+        display: flex;
+       
+       
+    }
+    .ingredients3 {
+        flex-direction: row;
+        width: 10vw;
+        height: 10vh;
+       display: flex;
+        font-size: 1rem;
+       
+    }
+    
+    .preparation3{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 1rem
+
+    }
+}
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .input1 {
+        width: 80vw;
+      margin: auto;
+    }
+    .input1 button{
+        width: 10px;
+    }
+    .pagesix .input1{
+      margin-right:290px;
+    }
+    .cookies {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .recette3 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .cookies .ingredients3{
+        display: flex;   
+    }
+    .ingredients3 {   
+        width: 10vw;
+        height: 10vh;
+        font-size: 1rem;    
+    }    
+    .preparation3{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 0.9rem
+    }  
+}
 /* MUFFINS */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .input1 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .recette4 {
+        flex-direction: column-reverse;
+        height: 90vh;
+    }
+    .muffins {
+        width: 30vw;
+        height: 45vw;
+    }
+    .muffins .ingredients4{
+        display: flex;
+        
+    }
+   
+    .ingredients4 {
+        flex-direction: row;
+        width: 10vw;
+        height: 10vh;
+       display: flex;
+        font-size: 1rem;
+    }
+    
+    .ingredients4,
+    .preparation4 {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .preparation4{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 1rem
+
+    }
+}
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .input1 {
+        width: 80vw;
+      margin: auto;
+    }
+   
+    .muffins {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .recette4 {
+        flex-direction: column-reverse;
+        height: auto; 
+    }
+    .muffins .ingredients4{
+        display: flex;   
+    }
+    .ingredients4 {   
+        width: 10vw;
+        height: 10vh;
+        font-size: 1rem;    
+    }    
+    .preparation4{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 0.9rem
+    }  
+}
+
+
 /* GAUFRES */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+   
+    .input1 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .gaufres {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    .recette5 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .gaufres .ingredients5{
+        display: flex;
+       
+       
+    }
+ 
+    .ingredients5 {
+       
+        width: 10vw;
+        height: 10vh;
+        font-size: 1rem;
+         
+    }
+    
+    .preparation5{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 1rem
+
+    }
+}
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .input1 {
+        width: 80vw;
+      margin: auto;
+    }
+  
+    .gaufres {
+        width: 30vw;
+        height: 45vw;
+        display: flex;
+        flex-direction: row;
+    }
+    .recette5 {
+        flex-direction: column;
+        height: auto; 
+    }
+    .brownie .ingredients2{
+        display: flex;   
+    }
+    .ingredients5 {   
+        width: 10vw;
+        height: 10vh;
+        font-size: 1rem;    
+    }    
+    .preparation5{
+        margin: 0;
+        width: 90vw;
+        height: 35vw;
+      margin-left: 5vw;
+       align-items: center;
+       justify-content: center;
+       font-size: 0.9rem
+    }  
+}
+
 
 /* AUTRES RECETTES */
 /* FORMAT TABLETTE (767px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    .pageneuf{
+        margin: 0;
+        width:100vw ;
+        height: 100vh;
+    }
     .titrerecette{
         width: 100vw;
+     
         display: flex;
         text-align: center;
         justify-content: center; 
         align-items: center; 
      color: #CB997E;
-     font-size: 1rem;  
+     font-size: 1.6rem;  
     }
 .carrousel {
     height: 400px;
@@ -1047,7 +1407,7 @@ button{
     align-items: center;
     background-position: center;
     top: 150px;
-    left: 200px;
+    left: 170px;
     overflow: hidden;
     background-color: #CB997E;
 }
@@ -1121,8 +1481,8 @@ button{
         display: flex;
         align-items: center;
         background-position: center;
-        top: 250px;
-        left: 250px;
+        /* top: 250px;
+        left: 250px; */
         overflow: hidden;
         background-color: #CB997E;
     }
@@ -1173,3 +1533,131 @@ button{
 }
 }
 
+/* CONTACT */
+/* FORMAT TABLETTE (767px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+ .contacter{
+    font-size: 2rem;
+
+ }
+ .contacter2{
+    font-size: 0.9em !important;
+    width: 80vw;
+ }
+ .icon {
+    margin-right: 2vw; 
+    background-color: rgba(0, 0, 0, 0.315);
+   width: 20vw;
+   height: 9vh;
+ 
+  }
+  .RS{height: 80vh;
+    margin-top: -25px;
+margin-right: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon img{
+    height: 50px;
+  }
+  .RS .box .icon {
+    font-size: 1em;
+    line-height: 100px;
+    color: white;
+   
+     }
+.box{
+    height: 55px;
+    width: 70px;
+    margin-left: 100px;
+ 
+}
+.RS .box .mon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+   height: 9vh;
+    background: #5B2406;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: translateY(-100px) rotateX(90deg);
+    font-size: 0.5em;
+  }
+  .RS .box .mon h3{
+    margin-top: 2vh;
+    padding: 0%;
+    list-style: 100px;
+    font-size: 2vh;
+    font-weight: 500;
+    color: white;
+    
+}
+
+}
+
+/* FORMAT TELEPHONE (Max 767px) */
+
+@media screen and (max-width: 767px){
+    .contacter{
+        font-size: 1.8rem;
+        height: 10vh;
+     }
+     .remerciement{
+        height: 10vh;
+     }
+     .contacter2{
+        font-size: 0.8em !important;
+        width: 90vw;
+     }
+     .icon {
+        margin-right: 2vw; 
+        background-color: rgba(0, 0, 0, 0.315);
+       width: 30vw;
+       height: 9vh;
+     
+      }
+      .RS{height: 80vh;
+        margin-top: -25px;
+   margin-right: 250px;
+        display: flex;
+        flex-direction: column;
+      }
+      .icon img{
+        height: 50px;
+      }
+      .RS .box .icon {
+        font-size: 1em;
+        line-height: 100px;
+        color: white;
+         }
+    .box{
+        height: 65px;
+        width: 100px;
+       margin: 10px;
+       
+     
+    }
+    .RS .box .mon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30vw;
+       height: 9vh;
+        background: #5B2406;
+        transition: 0.5s;
+        transform-origin: bottom;
+        transform: translateY(-100px) rotateX(90deg);
+        font-size: 0.5em;
+      }
+      .RS .box .mon h3{
+        margin-top: 2vh;
+        padding: 0%;
+        list-style: 100px;
+        font-size: 2vh;
+        font-weight: 500;
+        color: white;
+        
+    }
+
+}
