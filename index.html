@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- ACCUEIL -->
- <div class="pageune">
+ <div class="pageune"  id="accueil">
     <nav class="nav">
         <ul class="menu">
             <a href="#presentation"><li>Présentation</li></a>
@@ -23,7 +23,26 @@
            <a href="#autres"><li>Recettes sucrées</li></a>
             <a href="#contacts"><li>Contacts</li></a>
         </ul>
-        <div class="menuburger"><img src="img/burger-bar-marron.png" alt=""></div>
+        <div class="menuburger" onclick="toggleSubMenu()">
+          <img src="img/burger-bar-marron.png" alt="">
+          <!-- Sous-menu du burger -->
+          <div class="submenu" id="submenu">
+            <a href="#accueil"><li>Accueil</li></a>
+              <a href="#presentation"><li>Présentation</li></a>
+              <a href="#favoris">
+                  <li>Mes favoris</li>
+                  <ul class="deroulant">
+                      <a href="#pancakes"><li>Pancackes</li></a>
+                      <a href="#brownie"><li>Brownie</li></a>
+                      <a href="#cookies"><li>Cookies</li></a>
+                      <a href="#muffins"><li>Muffins</li></a>
+                      <a href="#gaufres"><li>Gaufres</li></a>
+                  </ul>
+              </a>
+              <a href="#autres"><li>Recettes sucrées</li></a>
+              <a href="#contacts"><li>Contacts</li></a>
+          </div>
+      </div>
     </nav>
     <div class="logo"> <img class="imglogo" src="img/logoecf.png" alt=""></div>
 </div>

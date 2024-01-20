@@ -108,7 +108,29 @@ body {
     color: #5B2406;
     text-decoration: none;
   }
+/* MENU BURGER */
 
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Couleur de fond du sous-menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
+    margin-right: 30%;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    transform: translateX(100%);
+    
+}
+.submenu li{
+    text-decoration: none;
+    color: #5B2406;
+    list-style: none;
+}
+.submenu.show {
+    display: block;
+}
 
 /* PRESENTATION */
 
@@ -675,7 +697,32 @@ button{
         background-position: center;
         position: relative;
         background-size: cover;
+        display: flex;
     }
+    /* MENU BURGER */
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff55; /* Couleur de fond du sous-menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
+    margin-right: 30%;
+    position: absolute;
+    top: 7vh;
+    left: 55vh;
+   
+    
+}
+.submenu li{
+    text-decoration: none;
+    color: #5B2406;
+    list-style: none;
+}
+.submenu.show {
+    display: block;
+}
+
  
     .nav {
       
@@ -699,8 +746,10 @@ button{
 
     .menuburger {
         display: block;
-        height: 7vh;
-       
+        height: 7vh;  
+    }
+    .menuburger img{
+        height: 6vh;
     }
     .logo{
      position: absolute;
@@ -718,6 +767,7 @@ button{
 
 /* FORMAT TELEPHONE (Max 767px) */
 
+
 @media screen and (max-width: 767px) {
     .pageune {
         background-image: url(img/accueilimg.png);
@@ -728,6 +778,30 @@ button{
         background-size: cover;
         object-fit: contain;
     }
+    /* MENU BURGER */
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);/* Couleur de fond du sous-menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
+    margin-right: 30%;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    transform: translateX(97%);
+    
+}
+.submenu li{
+    text-decoration: none;
+    color: #5B2406;
+    list-style: none;
+}
+.submenu.show {
+    display: block;
+}
+
 
     .nav {
     
@@ -738,7 +812,7 @@ button{
         position: fixed;
         top: 0;
         left: 0;
-        height: 9vh;
+        height: 5vh;
         width: 100vw;
         z-index: 1000; 
         justify-content: flex-end;
@@ -752,6 +826,9 @@ button{
     .menuburger {
         display: block;
         height: 5vh;
+    }
+    .menuburger img{
+        height: 4vh;
     }
     .logo{
         position: absolute;
@@ -1492,7 +1569,7 @@ button{
 
 @media screen and (max-width: 767px){
  
-   
+
     .titrerecette{
         height: 10vh;
         width: 100vw;
@@ -1518,7 +1595,7 @@ button{
         overflow: hidden;
         background-color: #CB997E; 
       margin-top: 10vh;
-      margin-left: -80%;
+      margin-left:  -45vh;
     }
     
     .container {
