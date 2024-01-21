@@ -25,14 +25,17 @@ body {
     
 }
 
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    height: 60vh;
-    width: 60vw;
-}
+  .logo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imglogo {
+    height: 50vh;
+  }
 
 .imglogo {
     height: 50vh; 
@@ -628,17 +631,15 @@ button{
     background-color: rgba(0, 0, 0, 0.315);
    width: 20vw;
    height: 9vh;
-  /* padding: 1vh;
-  margin-top: -10vh; */
+
   }
   
   .RS .box{
     position: relative;
-    /* width: 300px ;
-    height: 100px; */
+    
     box-sizing: border-box;
     text-align: center;
-    /* margin: 0 10px; */
+   
   }
 
   .RS .box .icon{
@@ -698,31 +699,9 @@ button{
         position: relative;
         background-size: cover;
         display: flex;
+        text-align: center;
     }
-    /* MENU BURGER */
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #ffffff55; /* Couleur de fond du sous-menu */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
-    margin-right: 30%;
-    position: absolute;
-    top: 7vh;
-    left: 55vh;
-   
-    
-}
-.submenu li{
-    text-decoration: none;
-    color: #5B2406;
-    list-style: none;
-}
-.submenu.show {
-    display: block;
-}
-
+  
  
     .nav {
       
@@ -753,16 +732,44 @@ button{
     }
     .logo{
      position: absolute;
-    top: 65vh;
-    left: 64vw;
+    top: 49vh;
+    left: 52vw;
+   
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
    
     }
     .imglogo {
         height: 40vh;
-    }
+       
+      }
+        /* MENU BURGER */
 
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff55; /* Couleur de fond du sous-menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
+    margin-right: 30%;
+    position: absolute;
+    top: 7vh;
+    left: 55vh;
+   
     
+}
+.submenu li{
+    text-decoration: none;
+    color: #5B2406;
+    list-style: none;
+}
+.submenu.show {
+    display: block;
+}
+
 }
 
 /* FORMAT TELEPHONE (Max 767px) */
@@ -778,31 +785,6 @@ button{
         background-size: cover;
         object-fit: contain;
     }
-    /* MENU BURGER */
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.4);/* Couleur de fond du sous-menu */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
-    margin-right: 30%;
-    position: absolute;
-    top: 5vh;
-    left: 0;
-    transform: translateX(97%);
-    
-}
-.submenu li{
-    text-decoration: none;
-    color: #5B2406;
-    list-style: none;
-}
-.submenu.show {
-    display: block;
-}
-
-
     .nav {
     
         color: #5B2406;
@@ -832,14 +814,38 @@ button{
     }
     .logo{
         position: absolute;
-       top: 65vh;
+       top: 50vh;
        left: 50vw;
        transform: translate(-50%, -50%);
       
        }
        .imglogo {
-           height: 30vh;
-       }
+        height: 30vh;
+        aspect-ratio: 1;
+      }
+          /* MENU BURGER */
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);/* Couleur de fond du sous-menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    z-index: 1; /* Assure que le sous-menu est au-dessus du reste du contenu */
+    margin-right: 45%;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+    transform: translateX(97%);
+    
+}
+.submenu li{
+    text-decoration: none;
+    color: #5B2406;
+    list-style: none;
+}
+.submenu.show {
+    display: block;
+}
 }
 
 /* PRESENTATION */
@@ -1123,7 +1129,11 @@ button{
         width: 10vw;
         height: 10vh;
         font-size: 1rem;    
-    }    
+    }   
+    #listeIngredients{
+        display: flex;
+        margin-left: 60px;
+    } 
     .preparation1{
         margin-top: 5vh;
      
@@ -1236,24 +1246,22 @@ button{
         margin: 0 auto;
     }
     
-
+    .pagesix .input1{
+     margin-left: 60px;
+      }
     .cookies {
         width: 30vw;
         height: 45vw;
         display: flex;
         flex-direction: row;
     }
-
-
-
     .recette3 {
         flex-direction: column;
         height: auto; 
     }
     .pancakes .ingredients1{
         display: flex;
-       
-       
+        
     }
     .ingredients3 {
         flex-direction: row;
@@ -1287,7 +1295,11 @@ button{
         width: 10px;
     }
     .pagesix .input1{
-      margin-right:55%;
+   display: flex;
+  text-align: center;
+  justify-content: center;
+  background-position: center;
+  margin-left: 40px;
     }
    
     .cookies {
@@ -1417,24 +1429,19 @@ button{
         flex-direction: row;
     }
 
-
-
     .recette5 {
         flex-direction: column;
         height: auto; 
     }
     .gaufres .ingredients5{
-        display: flex;
-       
-       
+        display: flex;       
     }
  
     .ingredients5 {
        margin-left: 50vw;
         width: 10vw;
         height: 10vh;
-        font-size: 1rem;
-         
+        font-size: 1rem;    
     }
     
     .preparation5{
@@ -1489,19 +1496,20 @@ button{
 /* FORMAT TABLETTE (767px - 1023px) */
 @media screen and (min-width: 768px) and (max-width: 1023px){
     .pageneuf{
+       margin-top: 30px;
         margin: 0;
         width:100vw ;
         height: 100vh;
     }
     .titrerecette{
         width: 100vw;
-     
         display: flex;
         text-align: center;
         justify-content: center; 
         align-items: center; 
      color: #CB997E;
-     font-size: 1.6rem;  
+     font-size: 1.6rem; 
+     margin-top: 60px; 
     }
 .carrousel {
     height: 400px;
@@ -1512,15 +1520,19 @@ button{
     display: flex;
     align-items: center;
     background-position: center;
-    top: 150px;
-    left: 170px;
+    top: 170px;
+    left: 180px;
     overflow: hidden;
     background-color: #CB997E;
+    text-align: center;
+
 }
 
 .container {
     display: flex;
     transition: transform 0.5s ease;
+    
+    
 }
 
 .container img {
@@ -1578,7 +1590,7 @@ button{
         justify-content: center; 
         align-items: center; 
      color: #CB997E;
-     font-size: 1rem;  
+     font-size: 1.1em;  
      margin-top: 40vh;
  
     }
@@ -1595,12 +1607,13 @@ button{
         overflow: hidden;
         background-color: #CB997E; 
       margin-top: 10vh;
-      margin-left:  -45vh;
+      margin-left:  -43vh;
     }
     
     .container {
         display: flex;
         transition: transform 0.5s ease;
+        
     }
     
     .container img {
