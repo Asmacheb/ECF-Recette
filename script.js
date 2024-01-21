@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 // PANCAKES
 
 function calculerQuantites() {
-    // Récupérer le nombre de personnes saisi
+
     var nbPersonnes = parseInt(document.getElementById("nbPersonnes").value);
 
-    // Obtenir la liste des ingrédients
+
     var listeIngredients = document.getElementById("listeIngredients").getElementsByTagName("li");
 
  
@@ -51,10 +51,9 @@ function calculerQuantites() {
 //Brownie
 
 function calculerQuantites2() {
-    // Récupérer le nombre de personnes saisi
+   
     var nbPersonnes2 = parseInt(document.getElementById("nbPersonnes2").value);
 
-    // Obtenir la liste des ingrédients
     var listeIngredients2 = document.getElementById("listeIngredients2").getElementsByTagName("li");
 
  
@@ -74,17 +73,17 @@ function calculerQuantites2() {
         var nouvelleQuantite2 = quantites2[ingredient2].quantite * nbPersonnes2;
         var unite2 = quantites2[ingredient2].unite;
 
-        // Mettre à jour le texte de l'élément de la liste
+       
         listeIngredients2[i].textContent = `${nouvelleQuantite2} ${unite2} ${ingredient2}`;
 } }
 
 // COOKIES
 
 function calculerQuantites3() {
-    // Récupérer le nombre de personnes saisi
+   
     var nbPersonnes3 = parseInt(document.getElementById("nbPersonnes3").value);
 
-    // Obtenir la liste des ingrédients
+
     var listeIngredients3 = document.getElementById("listeIngredients3").getElementsByTagName("li");
 
  
@@ -104,17 +103,16 @@ function calculerQuantites3() {
         var nouvelleQuantite3 = quantites3[ingredient3].quantite * nbPersonnes3;
         var unite3 = quantites3[ingredient3].unite;
 
-        // Mettre à jour le texte de l'élément de la liste
         listeIngredients3[i].textContent = `${nouvelleQuantite3} ${unite3} ${ingredient3}`;
 } }
 
 // MUFFINS
 
 function calculerQuantites4() {
-    // Récupérer le nombre de personnes saisi
+
     var nbPersonnes4 = parseInt(document.getElementById("nbPersonnes4").value);
 
-    // Obtenir la liste des ingrédients
+   
     var listeIngredients4 = document.getElementById("listeIngredients4").getElementsByTagName("li");
 
  
@@ -134,17 +132,14 @@ function calculerQuantites4() {
         var nouvelleQuantite4 = quantites4[ingredient4].quantite * nbPersonnes4;
         var unite4 = quantites4[ingredient4].unite;
 
-        // Mettre à jour le texte de l'élément de la liste
         listeIngredients4[i].textContent = `${nouvelleQuantite4} ${unite4} ${ingredient4}`;
 } }
 
 // GAUFRES
 
 function calculerQuantites5() {
-    // Récupérer le nombre de personnes saisi
-    var nbPersonnes5 = parseInt(document.getElementById("nbPersonnes5").value);
 
-    // Obtenir la liste des ingrédients
+    var nbPersonnes5 = parseInt(document.getElementById("nbPersonnes5").value);
     var listeIngredients5 = document.getElementById("listeIngredients5").getElementsByTagName("li");
 
  
